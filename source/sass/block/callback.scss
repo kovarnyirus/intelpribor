@@ -1,0 +1,64 @@
+.callback {
+  background-color: #2D323E;
+  padding-top: 35px;
+  padding-bottom: 34px;
+  background-image: url("../img/callback-bg.png");
+  background-size: cover;
+  margin-bottom: 65px;
+}
+
+.callback__wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.15);
+  border-radius: 46px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.callback__title {
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.callback__form-policy {
+  font-size: 8px;
+  line-height: 10px;
+  color: #858585;
+  padding-left: 17px;
+  padding-right: 15px;
+  display: block;
+}
+
+.callback__form-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 13px;
+}
+
+.callback__form-input {
+  width: 100%;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  background: #F7F7F7;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  padding-left: 23px;
+  padding-right: 35px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.callback__form-btn{
+  max-width: 100%;
+  box-shadow: none;
+  border: none;
+}

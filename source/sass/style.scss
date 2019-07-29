@@ -2,7 +2,28 @@
 @import "mixin";
 @import "normalize";
 @import "fonts";
+@import "fonts";
+@import "slick/slick-theme";
+@import "slick/slick";
 @import "global";
 @import "visuallyhidden";
-@import "./block/page-header";
+@import "block/page-header";
+@import "block/main-nav";
+@import "block/page-head";
+@import "block/about";
+@import "block/saving";
+@import "block/cost";
+@import "block/reliability";
+@import "block/support";
+@import "block/price";
+@import "block/shorten";
+@import "block/shorten-form";
+@import "block/action";
+@import "block/examples";
+@import "block/answers";
+@import "block/certificates";
+@import "block/callback";
+@import "block/contacts";
+@import "block/page-footer";
+
 

@@ -1,0 +1,32 @@
+.action {
+  background-color: #2D323E;
+  background-image: url("../img/action-bg.png");
+  padding-top: 42px;
+  padding-bottom: 64px;
+  color: #FFFFFF;
+  background-size: cover;
+  margin-bottom: 52px;
+}
+
+.action__title{
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 160%;
+}
+
+.action__subtitle{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-bottom: 32px;
+}
+
+.action__btn{
+  margin-left: auto;
+  margin-right: auto;
+}

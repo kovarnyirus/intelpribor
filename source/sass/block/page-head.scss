@@ -1,0 +1,66 @@
+.page-head {
+  background-image: url("../img/mobile-top-bg.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 85px;
+}
+
+.page-head__title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-bottom: 13px;
+}
+
+.page-head__subtitle{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 144%;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.page-head__list{
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.page-head__item{
+  width: 100%;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 140.62%;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  &:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(180deg, #ABDA2C 0%, #88B511 100%);
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  &:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #FFFFFF;
+  }
+}

@@ -12,16 +12,504 @@
 
   </script>
   <script src="js/picturefill.min.js" async></script>
+  <script src="js/jQuery.js" async></script>
+  <script src="js/main.js" async></script>
+
 </head>
 
 <body>
 
-  <div style="display:none">
-<!--    <include src="source/img/sprite.svg"></include>-->
-  </div>
-<div class="header">
-
+<div style="display:none">
+  <!--    <include src="source/img/sprite.svg"></include>-->
 </div>
+<div class="page-head">
+  <div class="header">
+    <div class="container header__wrapper">
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">О нас</li>
+            <li class="main-nav__item">Преимущества</li>
+            <li class="main-nav__item">Прайс-лист</li>
+            <li class="main-nav__item">Тест</li>
+            <li class="main-nav__item">Проекты</li>
+            <li class="main-nav__item">Вопросы</li>
+            <li class="main-nav__item">Сертификаты</li>
+            <li class="main-nav__item">Контакты</li>
+          </ul>
+          <div class="main-nav__phone-wrapper">
+          <span class="phone-icon">
+
+          </span>
+            <div class="main-nav__phone__list">
+              <a href="tel:+78001005518" class="main-nav__phone-item">8 (800) 100-55-18</a>
+              <a href="tel:+74959896228" class="main-nav__phone-item">8 (495) 989-62-28</a>
+            </div>
+          </div>
+          <div class="main-nav__callback-wrapper">
+            <a href="#" class="main-nav__callback-link">Заказать обратный звонок</a>
+          </div>
+        </div>
+      </nav>
+      <a href="" class="header__logo">
+        <img src="img/header-logo.png" alt="logo" width="140" class="header__logo-img">
+      </a>
+      <div class="header__contacts">
+        <div class="main-nav__phone-wrapper">
+          <span class="phone-icon">
+
+          </span>
+          <div class="main-nav__phone__list">
+            <a href="tel:+78001005518" class="main-nav__phone-item">8 (800) 100-55-18</a>
+            <a href="tel:+74959896228" class="main-nav__phone-item">8 (495) 989-62-28</a>
+          </div>
+        </div>
+        <div class="main-nav__callback-wrapper">
+          <a href="#" class="main-nav__callback-link">Заказать обратный звонок</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container page-head__wrapper">
+    <h1 class="page-head__title">
+      Надежные
+      теплосчетчики,
+    </h1>
+    <div class="page-head__subtitle">
+      которые экономят Ваши деньги
+    </div>
+    <a class="btn page-head__btn">Заказать консультацию</a>
+    <ul class="page-head__list">
+      <li class="page-head__item">Производство</li>
+      <li class="page-head__item">Монтаж</li>
+      <li class="page-head__item">Проектирование</li>
+      <li class="page-head__item">Облуживание</li>
+    </ul>
+  </div>
+</div>
+<section class="about">
+  <div class="container about__wrapper">
+    <div class="about__video-wrapper">
+      <a href="#" class="about__video-btn"></a>
+    </div>
+    <div class="about__content-wrapper">
+      <h3 class="about__title">
+        Мы занимаемся производством высокоточных электромагнитных приборов учета тепла, которые помогают сэкономить Ваши
+        деньги на услугах ЖКХ.
+      </h3>
+      <p class="about__description">
+        Общедомовые приборы учета тепла и энергоресурсов устанавливаются на вводные трубы центрального отопления и
+        водоснабжения, их задача зафиксировать фактическое потребление энергоресурсов, которое в большинстве случаев
+        существенно ниже нормативного значения.
+      </p>
+      <a class="btn about__btn">Смотреть видео о нас</a>
+    </div>
+  </div>
+</section>
+<section class="cost">
+  <div class="container cost__wrapper">
+    <h2 class="cost__title">
+      Низкие цены
+    </h2>
+    <p>Мы, как участник Инновационного центра Сколково, освобождены от НДС, что позволило существенно снизить конечную
+       стоимость нашей продукции и конкурировать по цене практически со всеми производителями электромагнитных приборов
+       учета.
+    </p>
+    <a href="#" class="btn cost__btn">Заказать консультацию</a>
+  </div>
+  <img src="" alt="img" class="cost__img">
+</section>
+<section class="saving">
+  <div class="container saving__wrapper">
+    <h2 class="saving__title">
+      Экономия
+    </h2>
+    <p class="subtitle saving__subtitle">
+      В большом количестве жилых домов достигнута экономия, после установки приборов учета более 7 000 рублей/год со
+      стандартной «двушки», потребление по прибор учета МКТС ниже норматива.
+    </p>
+    <p>
+      В Проекте по установке приборов учета МКТС в домах округа Домодедово, МО приняло участие 290 домов. Экономия
+      жителей указанных домов за 5 лет действия программы превысила 300 000 000 рублей!
+    </p>
+    <a href="#" class="btn saving__btn">Заказать консультацию</a>
+  </div>
+  <img src="#" alt="img" class="saving__img">
+</section>
+<section class="reliability">
+  <div class="container reliability__wrapper">
+    <h2 class="reliability__title">
+      Надежность
+    </h2>
+    <p class="subtitle reliability__subtitle">
+      Узлы и готовые изделия тщательного тестируются в ходе производства.
+    </p>
+    <p>
+      Например, платы измерительных модулей
+      проходят обязательный 72-часовой прогон на испытательном стенде, который производит их циклический нагрев и
+      охлаждение с одновременным контролем отказов и стабильности метрологических характеристик.
+      <br>
+      <br>
+      Это лишь малая часть испытаний и тестов, которых более 50-ти в процессе нашего производства.
+    </p>
+    <a href="@" class="btn reliability__btn">Заказать консультацию</a>
+  </div>
+  <img src="#" alt="img" class="reliability__img">
+</section>
+<section class="support">
+  <div class="container support__wrapper">
+    <h2 class="support__title">
+      Собственная диспетчерская <br>РАН-монитор
+    </h2>
+    <p class="subtitle support__subtitle">
+      Собственная диспетчерская РАН-монитор позволяет удалённо получать и обрабатывать данные домовых приборов учёта.
+    </p>
+    <p>
+      Это интернет-диспетчерская, поэтому с ней можно работать в любое время суток с любого электронного устройства из
+      любой точки мира. По всем системным ошибкам и показаниям датчиков можно задать критические значения, что позволит
+      быстро отреагировать на повышенный расход воды, или пониженное давление, или же отсутствие электроэнергии.
+      <br>
+      <br>
+      Кроме Вас и пользователей, которым вы дадите допуск, никто не будет иметь доступа к данным.
+    </p>
+    <a href="#" class="btn support__btn">Заказать консультацию</a>
+  </div>
+  <img src="#" alt="img" class="support__img">
+</section>
+<section class="price">
+  <div class="container price__wrapper">
+    <h2 class="price__title"><strong>Прайс-лист</strong> <br> на продукцию «Интелприбор»</h2>
+    <div class="price__buttons">
+      <a href="" class="price__btn">Системный блок теплосчетчика</a>
+      <a href="" class="price__btn">Расходомеры МКТС</a>
+    </div>
+    <div class="price__slider">
+      <button class="price__slider-prev"></button>
+      <button class="price__slider-next"></button>
+      <div class="price__slider-item">
+        <img src="img/price-slider/1.jpg" alt="img"  class="price__slider-img">
+        <h4 class="price__slider-title">М121-И6</h4>
+        <a href="#" class="btn price__slider-btn">Подробнее</a>
+      </div>
+      <div class="price__slider-item">
+        <img src="img/price-slider/2.jpg" alt="img"  class="price__slider-img">
+        <h4 class="price__slider-title">М121-И6</h4>
+        <a href="#" class="btn price__slider-btn">Подробнее</a>
+      </div>
+      <div class="price__slider-item">
+        <img src="img/price-slider/3.jpg" alt="img"  class="price__slider-img">
+        <h4 class="price__slider-title">М121-И6</h4>
+        <a href="#" class="btn price__slider-btn">Подробнее</a>
+      </div>
+      <div class="price__slider-item">
+        <img src="img/price-slider/2.jpg" alt="img"  class="price__slider-img">
+        <h4 class="price__slider-title">М121-И6</h4>
+        <a href="#" class="btn price__slider-btn">Подробнее</a>
+      </div>
+      <div class="price__slider-item">
+        <img src="img/price-slider/1.jpg" alt="img"  class="price__slider-img">
+        <h4 class="price__slider-title">М121-И6</h4>
+        <a href="#" class="btn price__slider-btn">Подробнее</a>
+      </div>
+
+    </div>
+  </div>
+  <img src="#" alt="img" class="price__img">
+</section>
+<section class="shorten">
+  <div class="container shorten__wrapper">
+    <h2 class="shorten__title">
+      Мы поможем сократить расходы на услуги ЖКХ
+    </h2>
+    <div class="shorten__subtitle">
+      от 15 до 40%
+    </div>
+    <form action="" class="shorten-form">
+      <div class="shorten-form__progress">
+        <span class="shorten-form__progress-text">
+          Вопрос 1 из 5
+        </span>
+      </div>
+      <div class="shorten-form__info">
+        Пройдите тест за 1 минуту и получите персональную скидку
+      </div>
+      <h2 class="shorten-form__title">Выберите нужную услугу</h2>
+      <p class="shorten-form__subtitle">Выберите вариант ответа и нажмите кнопку «Далее»</p>
+      <div class="shorten-form__wrap">
+        <label class="shorten-form__label" for="1">
+          <input type="checkbox" id="1">
+          <span class="shorten-form__checkbox-name">Под ключ</span>
+        </label>
+        <label class="shorten-form__label" for="2">
+          <input type="checkbox" id="2">
+          <span class="shorten-form__checkbox-name">Поставка</span>
+        </label>
+        <label class="shorten-form__label" for="3">
+          <input type="checkbox" id="3">
+          <span class="shorten-form__checkbox-name">Проектирование</span>
+        </label>
+        <label class="shorten-form__label" for="4">
+          <input type="checkbox" id="4">
+          <span class="shorten-form__checkbox-name">Облуживание</span>
+        </label>
+      </div>
+      <button class="btn shorten-form__btn">Далее</button>
+    </form>
+  </div>
+</section>
+<section class="action">
+  <div class="container action__wrapper">
+    <h2 class="action__title">
+      Акция!
+    </h2>
+    <p class="action__subtitle">
+      Для клиентов, обращающихся через форму обратной связи – проект в подарок!
+    </p>
+    <a href="#" class="btn action__btn">Форма обратной связи</a>
+  </div>
+</section>
+<section class="examples">
+  <div class="container examples__wrapper">
+    <h2 class="examples__title">
+      Посмотрите, <strong>сколько сэкономили наши клиенты</strong> за отопительный сезон 2018–2019 года
+    </h2>
+    <div class="examples-slider">
+      <button class="btn-prev examples-slider__prev"></button>
+      <button class="btn-next examples-slider__next"></button>
+      <div class="examples-slider__item">
+        <img src="img/examples/1.jpg" alt="img" class="examples-slider__img">
+        <h3 class="examples-slider__title">
+          г. Домодедово МО, Каширское шоссе, дом 63
+        </h3>
+        <table>
+          <tr>
+            <td>Площадь здания, м2</td>
+            <td>6 712,60</td>
+          </tr>
+          <tr>
+            <td>Потребление тепла по нормативу, (Гкал)</td>
+            <td>1 288,812</td>
+          </tr>
+          <tr>
+            <td>Потребление тепла по прибору учета, (Гкал)</td>
+            <td>996,077</td>
+          </tr>
+          <tr>
+            <td>ΔQ, Гкал (экономия)</td>
+            <td>292,735</td>
+          </tr>
+          <tr>
+            <td>ΔQ, % (экономия)</td>
+            <td>29,4</td>
+          </tr>
+          <tr>
+            <td>Экономия за отопительный период, руб.</td>
+            <td>644 017,00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="examples-slider__item">
+        <img src="img/examples/2.jpg" alt="img" class="examples-slider__img">
+        <h3 class="examples-slider__title">
+          г. Лыткарино, МО, 2 квартал, дом 13
+        </h3>
+        <table>
+          <tr>
+            <td>Площадь здания, м2</td>
+            <td>4 928,60</td>
+          </tr>
+          <tr>
+            <td>Потребление тепла по нормативу, (Гкал)</td>
+            <td>1 123,720</td>
+          </tr>
+          <tr>
+            <td>Потребление тепла по прибору учета, (Гкал)</td>
+            <td>805,200</td>
+          </tr>
+          <tr>
+            <td>ΔQ, Гкал (экономия)</td>
+            <td>318,520</td>
+          </tr>
+          <tr>
+            <td>ΔQ, % (экономия)</td>
+            <td>39,6</td>
+          </tr>
+          <tr>
+            <td>Экономия за отопительный период, руб.</td>
+            <td>700 744,00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="answers">
+  <div class="container answers__wrapper">
+    <h2 class="answers__title">
+      <strong>Ответы</strong> на популярные вопросы
+    </h2>
+    <div class="answers__list">
+      <div class="answers__item">
+        <h3 class="answers__item-title">
+          Правда, что установив счетчик на тепло, мы сможем экономить?
+        </h3>
+        <p class="answers__item-text">
+          Да, правда.
+          Экономия относительно нормативного значения составляет 15-40%.
+          Бывают исключения, но это редкое явление и такой дом можно выявить до начала работ. Хотите быть уверенным, что
+          экономия будет достигнута – звоните или заполните форму обратной связи.
+        </p>
+      </div>
+      <div class="answers__item answers__item--open">
+        <h3 class="answers__item-title">
+          Почему, после установки общедомового счетчика, мы будем платить меньше?
+        </h3>
+        <p class="answers__item-text">
+          Да, правда.
+          Экономия относительно нормативного значения составляет 15-40%.
+          Бывают исключения, но это редкое явление и такой дом можно выявить до начала работ. Хотите быть уверенным, что
+          экономия будет достигнута – звоните или заполните форму обратной связи.
+        </p>
+      </div>
+      <div class="answers__item">
+        <h3 class="answers__item-title">
+          Какие преимущества установки общедомовых счетчиков?
+        </h3>
+        <p class="answers__item-text">
+          Да, правда.
+          Экономия относительно нормативного значения составляет 15-40%.
+          Бывают исключения, но это редкое явление и такой дом можно выявить до начала работ. Хотите быть уверенным, что
+          экономия будет достигнута – звоните или заполните форму обратной связи.
+        </p>
+      </div>
+      <div class="answers__item">
+        <h3 class="answers__item-title">
+          Чем ваши приборы лучше конкурентов?
+        </h3>
+        <p class="answers__item-text">
+          Да, правда.
+          Экономия относительно нормативного значения составляет 15-40%.
+          Бывают исключения, но это редкое явление и такой дом можно выявить до начала работ. Хотите быть уверенным, что
+          экономия будет достигнута – звоните или заполните форму обратной связи.
+        </p>
+      </div>
+    </div>
+    <img src="#" alt="img" class="answers__img">
+  </div>
+</section>
+<section class="certificates">
+  <div class="container certificates__wrapper">
+    <h2 class="certificates__title">
+      Лицензии, сертификаты, награды
+    </h2>
+    <div class="certificates__slider">
+      <button class="btn-prev certificates__prev"></button>
+      <button class="btn-next certificates__next"></button>
+      <div class="certificates__slider-list">
+        <div class="certificates__slider__item">
+          <img src="img/certificates/1.jpg" alt="img" class="certificates__slider-img">
+        </div>
+        <div class="certificates__slider__item">
+          <img src="img/certificates/2.png" alt="img" class="certificates__slider-img">
+        </div>
+        <div class="certificates__slider__item">
+          <img src="img/certificates/3.png" alt="img" class="certificates__slider-img">
+        </div>
+        <div class="certificates__slider__item">
+          <img src="img/certificates/4.png" alt="img" class="certificates__slider-img">
+        </div>
+        <div class="certificates__slider__item">
+          <img src="img/certificates/1.jpg" alt="img" class="certificates__slider-img">
+        </div>
+        <div class="certificates__slider__item">
+          <img src="img/certificates/2.png" alt="img" class="certificates__slider-img">
+        </div>
+        <div class="certificates__slider__item">
+          <img src="img/certificates/3.png" alt="img" class="certificates__slider-img">
+        </div>
+        <div class="certificates__slider__item">
+          <img src="img/certificates/4.png" alt="img" class="certificates__slider-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="callback">
+  <div class="container callback__wrapper">
+    <h2 class="callback__title">
+      <strong>Оставьте заявку на консультацию</strong><br>
+      и мы свяжемся с Вами в ближайшее время
+    </h2>
+    <form action="" class="callback__form">
+      <div class="callback__form-item">
+        <label for="name">
+          <input type="text" class="callback__form-input" id="name" placeholder="Ваше имя">
+        </label>
+      </div>
+      <div class="callback__form-item">
+        <label for="phone">
+          <input type="text" class="callback__form-input" id="phone" placeholder="Номер телефона">
+        </label>
+      </div>
+      <div class="callback__form-item">
+        <button class="btn callback__form-btn">Отправить заявку</button>
+      </div>
+      <div class="callback__form-policy-wrapper">
+        <input type="checkbox" class="callback__form-policy-checkbox visuallyhidden" id="policy">
+        <label for="policy" class="callback__form-policy">
+          Подтверждаю согласие с условиями обработки персональных данных
+        </label>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="contacts">
+  <div class="container contacts__wrapper">
+    <div class="contacts__map">
+
+    </div>
+    <div class="contacts__info">
+      <h2 class="contacts__title">
+        Московская область, город Жуковский, улица Энергетическая, дом 15
+      </h2>
+      <div class="contacts__list">
+        <div class="contacts__item">
+          <div class="contacts__item-title">
+            телефон:
+          </div>
+          <a href="tel:+78001005518" class="contacts__item-tel">8 (800) 100-55-18</a>
+          <a href="tel:+74959896228" class="contacts__item-tel">8 (495) 989-62-28</a>
+        </div>
+        <div class="contacts__item">
+          <div class="contacts__item-title">
+            почта:
+          </div>
+          <a href="mailto:mail@mail.mail" class="contacts__item-tel">mail@mail.mail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="page-footer">
+  <div class="container page-footer__wrapper">
+    <div class="page-footer__copyright">© 2019   |   Интелприбор</div>
+    <a href="#" class="page-footer__policy">Политика конфиденциальности</a>
+    <div class="page-footer__dev">
+      <a href="#" class="page-footer__dev-link">
+        Задизайнено и разработано
+        в WAYAgency
+      </a>
+      <a href="#" class="page-footer__dev-logo">
+        <img src="img/mobile-footer-logo.png" class="page-footer__dev-logo-img" width="53" height="34"
+             alt="лого компании разработчика">
+      </a>
+    </div>
+  </div>
+</footer>
+
 </body>
 
 </html>

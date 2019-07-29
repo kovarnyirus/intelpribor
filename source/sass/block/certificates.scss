@@ -1,0 +1,24 @@
+.certificates__title {
+  margin-bottom: 37px;
+}
+
+.certificates__wrapper {
+  margin-bottom: 36px;
+}
+
+.certificates__slider{
+  position: relative;
+}
+
+.certificates__prev,
+.certificates__next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.certificates__prev{
+  left: 0;
+}
+.certificates__next{
+  right: 0;
+}
