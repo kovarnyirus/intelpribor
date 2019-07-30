@@ -20,6 +20,7 @@
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 13px;
+  min-height: 39px;
 }
 
 table{
@@ -52,5 +53,9 @@ td {
     text-align: right;
     opacity: 1;
     font-weight: 600;
+    width: 25%;
   }
+}
+table{
+  width: 100%;
 }

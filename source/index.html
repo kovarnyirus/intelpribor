@@ -12,9 +12,6 @@
 
   </script>
   <script src="js/picturefill.min.js" async></script>
-  <script src="js/jQuery.js" async></script>
-  <script src="js/main.js" async></script>
-
 </head>
 
 <body>
@@ -26,7 +23,8 @@
   <div class="header">
     <div class="container header__wrapper">
       <nav class="main-nav">
-        <button class="main-nav__toggle">
+        <button class="main-nav__toggle-wrapper">
+          <span class="main-nav__toggle"></span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -43,7 +41,7 @@
           <span class="phone-icon">
 
           </span>
-            <div class="main-nav__phone__list">
+            <div class="main-nav__phone-list">
               <a href="tel:+78001005518" class="main-nav__phone-item">8 (800) 100-55-18</a>
               <a href="tel:+74959896228" class="main-nav__phone-item">8 (495) 989-62-28</a>
             </div>
@@ -61,7 +59,7 @@
           <span class="phone-icon">
 
           </span>
-          <div class="main-nav__phone__list">
+          <div class="main-nav__phone-list">
             <a href="tel:+78001005518" class="main-nav__phone-item">8 (800) 100-55-18</a>
             <a href="tel:+74959896228" class="main-nav__phone-item">8 (495) 989-62-28</a>
           </div>
@@ -88,6 +86,7 @@
       <li class="page-head__item">Проектирование</li>
       <li class="page-head__item">Облуживание</li>
     </ul>
+    <img src="img/head-img.png" alt="img" class="page-head__img">
   </div>
 </div>
 <section class="about">
@@ -189,32 +188,33 @@
     <div class="price__slider">
       <button class="price__slider-prev"></button>
       <button class="price__slider-next"></button>
-      <div class="price__slider-item">
-        <img src="img/price-slider/1.jpg" alt="img"  class="price__slider-img">
-        <h4 class="price__slider-title">М121-И6</h4>
-        <a href="#" class="btn price__slider-btn">Подробнее</a>
+      <div class="price__slider-list">
+        <div class="price__slider-item">
+          <img src="img/price-slider/1.jpg" alt="img"  class="price__slider-img">
+          <h4 class="price__slider-title">М121-И6</h4>
+          <a href="#" class="btn price__slider-btn">Подробнее</a>
+        </div>
+        <div class="price__slider-item">
+          <img src="img/price-slider/2.jpg" alt="img"  class="price__slider-img">
+          <h4 class="price__slider-title">М121-И6</h4>
+          <a href="#" class="btn price__slider-btn">Подробнее</a>
+        </div>
+        <div class="price__slider-item">
+          <img src="img/price-slider/3.jpg" alt="img"  class="price__slider-img">
+          <h4 class="price__slider-title">М121-И6</h4>
+          <a href="#" class="btn price__slider-btn">Подробнее</a>
+        </div>
+        <div class="price__slider-item">
+          <img src="img/price-slider/2.jpg" alt="img"  class="price__slider-img">
+          <h4 class="price__slider-title">М121-И6</h4>
+          <a href="#" class="btn price__slider-btn">Подробнее</a>
+        </div>
+        <div class="price__slider-item">
+          <img src="img/price-slider/1.jpg" alt="img"  class="price__slider-img">
+          <h4 class="price__slider-title">М121-И6</h4>
+          <a href="#" class="btn price__slider-btn">Подробнее</a>
+        </div>
       </div>
-      <div class="price__slider-item">
-        <img src="img/price-slider/2.jpg" alt="img"  class="price__slider-img">
-        <h4 class="price__slider-title">М121-И6</h4>
-        <a href="#" class="btn price__slider-btn">Подробнее</a>
-      </div>
-      <div class="price__slider-item">
-        <img src="img/price-slider/3.jpg" alt="img"  class="price__slider-img">
-        <h4 class="price__slider-title">М121-И6</h4>
-        <a href="#" class="btn price__slider-btn">Подробнее</a>
-      </div>
-      <div class="price__slider-item">
-        <img src="img/price-slider/2.jpg" alt="img"  class="price__slider-img">
-        <h4 class="price__slider-title">М121-И6</h4>
-        <a href="#" class="btn price__slider-btn">Подробнее</a>
-      </div>
-      <div class="price__slider-item">
-        <img src="img/price-slider/1.jpg" alt="img"  class="price__slider-img">
-        <h4 class="price__slider-title">М121-И6</h4>
-        <a href="#" class="btn price__slider-btn">Подробнее</a>
-      </div>
-
     </div>
   </div>
   <img src="#" alt="img" class="price__img">
@@ -227,6 +227,7 @@
     <div class="shorten__subtitle">
       от 15 до 40%
     </div>
+    <a href="#" class="btn shorten__btn">Заказать консультацию</a>
     <form action="" class="shorten-form">
       <div class="shorten-form__progress">
         <span class="shorten-form__progress-text">
@@ -279,69 +280,71 @@
     <div class="examples-slider">
       <button class="btn-prev examples-slider__prev"></button>
       <button class="btn-next examples-slider__next"></button>
-      <div class="examples-slider__item">
-        <img src="img/examples/1.jpg" alt="img" class="examples-slider__img">
-        <h3 class="examples-slider__title">
-          г. Домодедово МО, Каширское шоссе, дом 63
-        </h3>
-        <table>
-          <tr>
-            <td>Площадь здания, м2</td>
-            <td>6 712,60</td>
-          </tr>
-          <tr>
-            <td>Потребление тепла по нормативу, (Гкал)</td>
-            <td>1 288,812</td>
-          </tr>
-          <tr>
-            <td>Потребление тепла по прибору учета, (Гкал)</td>
-            <td>996,077</td>
-          </tr>
-          <tr>
-            <td>ΔQ, Гкал (экономия)</td>
-            <td>292,735</td>
-          </tr>
-          <tr>
-            <td>ΔQ, % (экономия)</td>
-            <td>29,4</td>
-          </tr>
-          <tr>
-            <td>Экономия за отопительный период, руб.</td>
-            <td>644 017,00</td>
-          </tr>
-        </table>
-      </div>
-      <div class="examples-slider__item">
-        <img src="img/examples/2.jpg" alt="img" class="examples-slider__img">
-        <h3 class="examples-slider__title">
-          г. Лыткарино, МО, 2 квартал, дом 13
-        </h3>
-        <table>
-          <tr>
-            <td>Площадь здания, м2</td>
-            <td>4 928,60</td>
-          </tr>
-          <tr>
-            <td>Потребление тепла по нормативу, (Гкал)</td>
-            <td>1 123,720</td>
-          </tr>
-          <tr>
-            <td>Потребление тепла по прибору учета, (Гкал)</td>
-            <td>805,200</td>
-          </tr>
-          <tr>
-            <td>ΔQ, Гкал (экономия)</td>
-            <td>318,520</td>
-          </tr>
-          <tr>
-            <td>ΔQ, % (экономия)</td>
-            <td>39,6</td>
-          </tr>
-          <tr>
-            <td>Экономия за отопительный период, руб.</td>
-            <td>700 744,00</td>
-          </tr>
-        </table>
+      <div class="examples-slider-list">
+        <div class="examples-slider__item">
+          <img src="img/examples/1.jpg" alt="img" class="examples-slider__img">
+          <h3 class="examples-slider__title">
+            г. Домодедово МО, Каширское шоссе, дом 63
+          </h3>
+          <table>
+            <tr>
+              <td>Площадь здания, м2</td>
+              <td>6 712,60</td>
+            </tr>
+            <tr>
+              <td>Потребление тепла по нормативу, (Гкал)</td>
+              <td>1 288,812</td>
+            </tr>
+            <tr>
+              <td>Потребление тепла по прибору учета, (Гкал)</td>
+              <td>996,077</td>
+            </tr>
+            <tr>
+              <td>ΔQ, Гкал (экономия)</td>
+              <td>292,735</td>
+            </tr>
+            <tr>
+              <td>ΔQ, % (экономия)</td>
+              <td>29,4</td>
+            </tr>
+            <tr>
+              <td>Экономия за отопительный период, руб.</td>
+              <td>644 017,00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="examples-slider__item">
+          <img src="img/examples/2.jpg" alt="img" class="examples-slider__img">
+          <h3 class="examples-slider__title">
+            г. Лыткарино, МО, 2 квартал, дом 13
+          </h3>
+          <table>
+            <tr>
+              <td>Площадь здания, м2</td>
+              <td>4 928,60</td>
+            </tr>
+            <tr>
+              <td>Потребление тепла по нормативу, (Гкал)</td>
+              <td>1 123,720</td>
+            </tr>
+            <tr>
+              <td>Потребление тепла по прибору учета, (Гкал)</td>
+              <td>805,200</td>
+            </tr>
+            <tr>
+              <td>ΔQ, Гкал (экономия)</td>
+              <td>318,520</td>
+            </tr>
+            <tr>
+              <td>ΔQ, % (экономия)</td>
+              <td>39,6</td>
+            </tr>
+            <tr>
+              <td>Экономия за отопительный период, руб.</td>
+              <td>700 744,00</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -444,12 +447,12 @@
       и мы свяжемся с Вами в ближайшее время
     </h2>
     <form action="" class="callback__form">
-      <div class="callback__form-item">
+      <div class="callback__form-item callback__form-item--name">
         <label for="name">
           <input type="text" class="callback__form-input" id="name" placeholder="Ваше имя">
         </label>
       </div>
-      <div class="callback__form-item">
+      <div class="callback__form-item callback__form-item--phone">
         <label for="phone">
           <input type="text" class="callback__form-input" id="phone" placeholder="Номер телефона">
         </label>
@@ -480,8 +483,8 @@
           <div class="contacts__item-title">
             телефон:
           </div>
-          <a href="tel:+78001005518" class="contacts__item-tel">8 (800) 100-55-18</a>
-          <a href="tel:+74959896228" class="contacts__item-tel">8 (495) 989-62-28</a>
+          <a href="tel:+78001005518" class="contacts__item-tel">8 (800) 100-55-18</a>,
+          <a href="tel:+74959896228" class="contacts__item-tel">8 (495) 989-62-28 </a>
         </div>
         <div class="contacts__item">
           <div class="contacts__item-title">
@@ -499,7 +502,7 @@
     <a href="#" class="page-footer__policy">Политика конфиденциальности</a>
     <div class="page-footer__dev">
       <a href="#" class="page-footer__dev-link">
-        Задизайнено и разработано
+        Задизайнено и разработано <br>
         в WAYAgency
       </a>
       <a href="#" class="page-footer__dev-logo">
@@ -509,6 +512,10 @@
     </div>
   </div>
 </footer>
+
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

@@ -3,6 +3,46 @@
 }
 .main-nav{
   position: absolute;
-  left: 30px;
-  top: 30px;
+  left: 10px;
+  top: 10px;
+  width: 25px;
+}
+
+.main-nav__toggle-wrapper{
+  width: 20px;
+  height: 15px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.main-nav__toggle{
+  border: none;
+  width: 20px;
+  height: 1px;
+  border-radius: 1px;
+  background: #FFFFFF;
+  position: relative;
+  display: block;
+  &:before,
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    border-radius: 1px;
+    right: 0;
+    width: 20px;
+    background: #FFFFFF;
+  }
+  &:before{
+    top: -5px;
+  }
+  &:after{
+    bottom: -5px;
+    width: 12px;
+  }
 }

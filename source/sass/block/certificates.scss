@@ -1,5 +1,8 @@
 .certificates__title {
   margin-bottom: 37px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
 }
 
 .certificates__wrapper {
@@ -10,8 +13,15 @@
   position: relative;
 }
 
+.certificates__slider-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .certificates__prev,
 .certificates__next{
+  z-index: 5;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

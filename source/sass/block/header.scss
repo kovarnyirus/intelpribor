@@ -1,0 +1,27 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+.header__logo{
+  flex-grow: 1;
+
+}
+
+
+.header__contacts{
+  & .main-nav__phone-list{
+    display: none;
+  }
+  & .main-nav__callback-wrapper{
+    display: none;
+  }
+}
+
+.header__logo-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
