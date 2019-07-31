@@ -3,32 +3,56 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 130%;
+  @media ($desktop_width) {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+    margin-bottom: 20px;
+  }
 }
 
 .certificates__wrapper {
   margin-bottom: 36px;
+  @media ($desktop_width) {
+    margin-bottom: 119px;
+  }
 }
 
-.certificates__slider{
+.certificates__slider {
   position: relative;
 }
 
-.certificates__slider-img{
+.certificates__slider__item {
+  @media ($desktop_width) {
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+}
+
+.certificates__slider-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .certificates__prev,
-.certificates__next{
+.certificates__next {
   z-index: 5;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.certificates__prev{
+
+.certificates__prev {
   left: 0;
+  @media ($desktop_width) {
+    left: -60px;
+  }
 }
-.certificates__next{
+
+.certificates__next {
   right: 0;
+  @media ($desktop_width) {
+    right: -60px;
+  }
 }

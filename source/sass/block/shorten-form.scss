@@ -34,6 +34,27 @@
     background-image: url("../img/shorten-form-top.png");
     z-index: -1;
   }
+  @media ($desktop_width)  {
+    max-width: 800px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 103px;
+    &:after {
+      width: 146px;
+      height: 146px;
+      bottom: -57px;
+      left: -65px;
+    }
+
+    &:before {
+      width: 285px;
+      height: 285px;
+      top: -120px;
+      right: -130px;
+    }
+  }
 }
 
 .shorten-form__progress {

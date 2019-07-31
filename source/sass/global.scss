@@ -19,6 +19,8 @@ body {
   @include body-reset;
   min-width: $width_mobile;
   font-family: $font-base;
+  overflow-x: hidden;
+
 }
 
 h1, h2, h3, h4 {
@@ -41,7 +43,7 @@ h1, h2, h3, h4 {
     max-width: 720px;
   }
   @media (min-width: 1000px) {
-    max-width: 980px;
+    max-width: 1000px;
   }
 
 }
@@ -102,6 +104,12 @@ h2 {
   font-size: 26px;
   line-height: 31px;
   margin-bottom: 22px;
+  @media ($desktop_width) {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
 }
 
 h3 {
@@ -120,14 +128,27 @@ p {
   color: #000000;
   opacity: 0.7;
   margin-bottom: 22px;
+  @media ($desktop_width) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    margin-bottom: 42px;
+  }
 }
 
 .subtitle {
-  font-family: Museo Sans Cyrl;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 140%;
+  @media ($desktop_width) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
 }
 
 strong {
@@ -189,6 +210,10 @@ img {
     opacity: 1;
     width: 7px;
     height: 7px;
+    @media ($desktop_width) {
+      width: 10px;
+      height: 10px;
+    }
   }
 
   & li.slick-active button::before {
@@ -197,7 +222,11 @@ img {
     width: 10px;
     height: 10px;
     margin-top: -1px;
-
+    @media ($desktop_width) {
+      width: 15px;
+      height: 15px;
+      margin-top: -3px;
+    }
   }
 }
 

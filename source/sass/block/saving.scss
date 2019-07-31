@@ -1,6 +1,43 @@
+.saving {
+  position: relative;
+}
+
 .saving__img {
   display: none;
+  position: absolute;
+  right: 50%;
+  top: -30px;
+  @media ($desktop_width) {
+    display: block;
+    margin-right: 60px;
+  }
 }
-.saving__wrapper{
+
+.saving__title{
+@media ($desktop_width) {
+  position: relative;
+  &:before {
+    position: absolute;
+    display: block;
+    left: -10px;
+    top: 20px;
+    content: '2';
+    color: #000000;
+    font-weight: 900;
+    font-size: 300px;
+    opacity: 0.05;
+    transform: translate(-50%);
+  }
+}
+
+}
+
+.saving__wrapper {
   margin-bottom: 88px;
+  @media ($desktop_width) {
+    width: 51%;
+    margin-left: auto;
+    margin-bottom: 133px;
+  }
 }
+

@@ -1,6 +1,43 @@
-.cost{
+.cost {
   padding-bottom: 88px;
+  position: relative;
+  @media ($desktop_width) {
+    padding-bottom: 160px;
+  }
 }
-.cost__img{
- display: none;
+
+.cost__img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  @media ($desktop_width) {
+    display: block;
+  }
+}
+
+.cost__title {
+  @media ($desktop_width) {
+    position: relative;
+    &:before {
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 30px;
+      content: '1';
+      color: #000000;
+      font-weight: 900;
+      font-size: 300px;
+      opacity: 0.05;
+      transform: translate(-50%);
+    }
+  }
+}
+
+.cost__wrapper {
+  @media ($desktop_width) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

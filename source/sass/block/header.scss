@@ -3,20 +3,39 @@
   justify-content: space-between;
   padding-top: 16px;
   margin-bottom: 40px;
+  @media ($desktop_width) {
+    margin-bottom: 65px;
+  }
 }
 
 .header__logo{
   flex-grow: 1;
-
+  @media ($desktop_width) {
+    flex-grow: 0;
+  }
 }
 
 
 .header__contacts{
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   & .main-nav__phone-list{
     display: none;
+    margin-left: 15px;
   }
   & .main-nav__callback-wrapper{
     display: none;
+  }
+  @media ($desktop_width) {
+
+    & .main-nav__phone-list{
+      display: block;
+    }
+    & .main-nav__callback-wrapper{
+      display: block;
+    }
   }
 }
 
@@ -24,4 +43,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  @media ($desktop_width) {
+    width: 290px;
+  }
 }

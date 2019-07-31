@@ -10,40 +10,59 @@
     margin-bottom: 40px;
   }
   @media ($desktop_width) {
-    margin-bottom: 40px;
-    background-image: url("../img/mobile-top-bg.png");
+    padding-bottom: 350px;
+    background-image: url("../img/desctop-bg.png");
+    background-position-y: bottom;
+    background-position-x: center;
   }
 }
-.page-head__wrapper{
+
+.page-head__wrapper {
   position: relative;
 }
 
 
-.page-head__title{
+.page-head__title {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   color: #FFFFFF;
   margin-bottom: 13px;
+  @media ($desktop_width) {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 111.3%;
+    max-width: 500px;
+  }
 }
 
-.page-head__subtitle{
+.page-head__subtitle {
   font-weight: 300;
   font-size: 16px;
   line-height: 144%;
   color: #FFFFFF;
   margin-bottom: 16px;
+  @media ($desktop_width) {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 144%;
+    margin-bottom: 53px;
+  }
 }
 
-.page-head__list{
+.page-head__list {
   display: flex;
   padding-left: 0;
   padding-right: 0;
   list-style: none;
   flex-wrap: wrap;
+  @media ($desktop_width) {
+    max-width: 481px;
+  }
 }
 
-.page-head__item{
+.page-head__item {
   width: 100%;
   font-weight: 300;
   font-size: 10px;
@@ -52,7 +71,8 @@
   margin-bottom: 8px;
   padding-left: 20px;
   position: relative;
-  &:before{
+
+  &:before {
     position: absolute;
     display: block;
     content: '';
@@ -64,7 +84,8 @@
     transform: translateY(-50%);
     border-radius: 50%;
   }
-  &:after{
+
+  &:after {
     position: absolute;
     display: block;
     content: '';
@@ -76,10 +97,37 @@
     transform: translateY(-50%);
     border: 1px solid #FFFFFF;
   }
+
+  @media ($desktop_width) {
+    width: 50%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140.62%;
+    padding-left: 30px;
+    &:before {
+      width: 5px;
+      height: 5px;
+      left: 6px;
+    }
+    &:after {
+      width: 17px;
+      height: 17px;
+    }
+  }
 }
-.page-head__img{
+
+.page-head__img {
   position: absolute;
   bottom: -100px;
   right: -20px;
   max-width: 188px;
+  @media ($desktop_width) {
+    max-width: 458px;
+  }
+}
+
+.page-head__btn {
+  @media ($desktop_width) {
+    margin-bottom: 62px;
+  }
 }
