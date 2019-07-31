@@ -93,3 +93,6 @@ $('.certificates__slider-list').slick({
 $('.answers__item').on('click', function (e) {
   $(this).toggleClass('answers__item--open');
 });
+$('.main-nav__toggle-wrapper').on('click', function (e) {
+  $(this).closest('.main-nav').toggleClass('main-nav--open');
+});
