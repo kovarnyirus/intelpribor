@@ -22,7 +22,8 @@
 }
 
 .examples-slider__item {
-  @media ($desktop_width) {
+
+  @media (min-width: 500px) {
     max-width: 465px;
     margin-right: 15px;
     &:nth-child(2n){
