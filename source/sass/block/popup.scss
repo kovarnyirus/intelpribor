@@ -6,6 +6,8 @@
   border-radius: 29px;
   position: relative;
   padding-bottom: 58px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .popup__title{
@@ -24,13 +26,12 @@
   & .callback__form-item{
     margin-left: auto;
     margin-right: auto;
-    background: #F7F7F7;
-    border: 1px solid #EFEFEF;
-    box-sizing: border-box;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 7px;
     opacity: 1;
     margin-bottom: 18px;
+  }
+  & .callback__form-input{
+    background: #F7F7F7;
+    opacity: 1;
   }
   & .callback__form-policy-wrapper{
     width: 300px;
